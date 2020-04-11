@@ -7,7 +7,3 @@ let currentRoundNumber = 1;
 const generateTarget = () => {
     return Math.floor(Math.random() * 9);
 };
-
-const compareGuesses = () => {
-    
-}
