@@ -4,10 +4,12 @@ let currentRoundNumber = 1;
 
 // Write your code below:
 
+// Generates random number 
 const generateTarget = () => {
     return Math.floor(Math.random() * 9);
 } 
 
+// Compares human and computer guesses
 function compareGuesses(humanGuess, computerGuess, targetNumber) {
     if (Math.abs(humanGuess - targetNumber) < Math.abs(computerGuess - targetNumber) || humanGuess === computerGuess) {
         return true;
@@ -16,6 +18,7 @@ function compareGuesses(humanGuess, computerGuess, targetNumber) {
     }
 }
 
+// Updates winner's score
 function updateScore(winner) {
     if (winner === 'human') {
         humanScore += 1;
@@ -24,6 +27,7 @@ function updateScore(winner) {
     }
 }
 
+// Advances round number
 function advanceRound() {
     currentRoundNumber += 1;
 }
