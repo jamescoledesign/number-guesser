@@ -16,10 +16,10 @@ function compareGuesses(humanGuess, computerGuess, targetNumber) {
     }
 }
 
-const updateScore = winner => {
-    if (compareGuesses === true) {
+function updateScore(winner) {
+    if (winner === 'human') {
         humanScore += 1;
-    } else if (compareGuesses === false) {
+    } else if (winner === 'computer') {
         computerScore += 1;
     }
 }
